@@ -3992,3 +3992,132 @@ Node.js v22.14.0
 [NX v20.8.0 Daemon Server] - 2025-10-31T11:40:30.565Z - There are open file watchers. Resetting inactivity timer.
 [NX v20.8.0 Daemon Server] - 2025-10-31T14:40:30.999Z - There are open file watchers. Resetting inactivity timer.
 [NX v20.8.0 Daemon Server] - 2025-10-31T17:57:44.742Z - There are open file watchers. Resetting inactivity timer.
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:46.363Z - Started listening on: /var/folders/1w/j5gh4b2n7jl8k_xmxvfcq24m0000gn/T/b4f4370c2d145908d141/d.sock
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:46.370Z - [WATCHER]: Subscribed to changes within: /Users/praiseogunleye/Documents/etherum-learn (native)
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:46.372Z - Established a connection. Number of open connections: 1
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:46.373Z - Closed a connection. Number of open connections: 0
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:46.380Z - Established a connection. Number of open connections: 1
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:46.381Z - Closed a connection. Number of open connections: 0
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:46.381Z - Established a connection. Number of open connections: 1
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:46.382Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:46.783Z - Time taken for 'Load Nx Plugin: /Users/praiseogunleye/Documents/etherum-learn/node_modules/.pnpm/nx@20.8.0_@swc-node+register@1.9.2_@swc+core@1.5.29_@swc+helpers@0.5.17__@swc+types@0.1_ab83749160d9edde04c4ee8d9916235f/node_modules/nx/src/plugins/package-json' 396.01149999999996ms
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:46.798Z - Time taken for 'Load Nx Plugin: /Users/praiseogunleye/Documents/etherum-learn/node_modules/.pnpm/nx@20.8.0_@swc-node+register@1.9.2_@swc+core@1.5.29_@swc+helpers@0.5.17__@swc+types@0.1_ab83749160d9edde04c4ee8d9916235f/node_modules/nx/src/plugins/js' 412.14183299999996ms
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:46.810Z - Time taken for 'loadDefaultNxPlugins' 423.31624999999997ms
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.253Z - Time taken for 'Load Nx Plugin: @nx/jest/plugin' 868.1753749999999ms
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.267Z - Time taken for 'Load Nx Plugin: @nx/eslint/plugin' 883.208041ms
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.518Z - Time taken for 'Load Nx Plugin: @nx/webpack/plugin' 1132.700333ms
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.519Z - Time taken for 'Load Nx Plugin: @nx/cypress/plugin' 1134.2452500000002ms
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.538Z - Time taken for 'Load Nx Plugin: @nx/react/router-plugin' 1154.9121249999998ms
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.543Z - Time taken for 'Load Nx Plugin: @nx/remix/plugin' 1160.13425ms
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.548Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.548Z - [REQUEST]: 
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.548Z - [REQUEST]: 
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.559Z - Time taken for 'loadSpecifiedNxPlugins' 1164.710084ms
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.559Z - Established a connection. Number of open connections: 2
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.560Z - Established a connection. Number of open connections: 3
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.560Z - Closed a connection. Number of open connections: 2
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.560Z - Established a connection. Number of open connections: 3
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.561Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.561Z - Done responding to the client handleHashMultiGlob
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.561Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.561Z - Established a connection. Number of open connections: 4
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.562Z - Closed a connection. Number of open connections: 3
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.562Z - Established a connection. Number of open connections: 4
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.563Z - [REQUEST]: Responding to the client. handleGlob
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.563Z - Done responding to the client handleGlob
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.563Z - Handled GLOB. Handling time: 1. Response time: 0.
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.563Z - Established a connection. Number of open connections: 5
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.563Z - Closed a connection. Number of open connections: 4
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.563Z - Established a connection. Number of open connections: 5
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.563Z - Closed a connection. Number of open connections: 4
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.563Z - Established a connection. Number of open connections: 5
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.564Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.565Z - Done responding to the client handleHashMultiGlob
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.565Z - Handled HASH_GLOB. Handling time: 0. Response time: 1.
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.565Z - Established a connection. Number of open connections: 6
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.567Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.567Z - Done responding to the client handleHashMultiGlob
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.567Z - Handled HASH_GLOB. Handling time: 2. Response time: 0.
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.568Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.568Z - Done responding to the client handleHashGlob
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.568Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.568Z - Established a connection. Number of open connections: 7
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.568Z - Closed a connection. Number of open connections: 6
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.569Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.569Z - Done responding to the client handleHashGlob
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.569Z - Handled HASH_GLOB. Handling time: 0. Response time: 0.
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.575Z - Established a connection. Number of open connections: 7
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.576Z - Closed a connection. Number of open connections: 6
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.576Z - Established a connection. Number of open connections: 7
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.578Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.578Z - Done responding to the client handleHashMultiGlob
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.578Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.659Z - Established a connection. Number of open connections: 8
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:47.660Z - Closed a connection. Number of open connections: 7
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.635Z - Time taken for 'build-project-configs' 1062.5985829999997ms
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.643Z - Time taken for '@nx/remix/plugin:createDependencies' 12.389958000000206ms
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.643Z - Time taken for '@nx/vite/plugin:createDependencies' 11.068749999999909ms
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.673Z - [SYNC]: collect registered sync generators
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.673Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.674Z - Time taken for 'total for creating and serializing project graph' 2291.360417ms
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.685Z - Done responding to the client project-graph
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.685Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 2291. Response time: 12.
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.700Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.700Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.700Z - Time taken for 'total for creating and serializing project graph' 0.3057499999999891ms
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.727Z - Done responding to the client project-graph
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.727Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 27.
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.738Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.738Z - Done responding to the client handleContextFileData
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.738Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 0.
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.740Z - [REQUEST]: Responding to the client. handleContextFileData
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at /Users/praiseogunleye/Documents/etherum-learn/node_modules/.pnpm/nx@20.8.0_@swc-node+register@1.9.2_@swc+core@1.5.29_@swc+helpers@0.5.17__@swc+types@0.1_ab83749160d9edde04c4ee8d9916235f/node_modules/nx/src/daemon/server/shutdown-utils.js:73:16
+    at new Promise (<anonymous>)
+    at respondToClient (/Users/praiseogunleye/Documents/etherum-learn/node_modules/.pnpm/nx@20.8.0_@swc-node+register@1.9.2_@swc+core@1.5.29_@swc+helpers@0.5.17__@swc+types@0.1_ab83749160d9edde04c4ee8d9916235f/node_modules/nx/src/daemon/server/shutdown-utils.js:69:12) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.740Z - Done responding to the client handleContextFileData
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.741Z - Socket error
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+    at _write (node:internal/streams/writable:501:10)
+    at Writable.write (node:internal/streams/writable:510:10)
+    at /Users/praiseogunleye/Documents/etherum-learn/node_modules/.pnpm/nx@20.8.0_@swc-node+register@1.9.2_@swc+core@1.5.29_@swc+helpers@0.5.17__@swc+types@0.1_ab83749160d9edde04c4ee8d9916235f/node_modules/nx/src/daemon/server/shutdown-utils.js:73:16
+    at new Promise (<anonymous>)
+    at respondToClient (/Users/praiseogunleye/Documents/etherum-learn/node_modules/.pnpm/nx@20.8.0_@swc-node+register@1.9.2_@swc+core@1.5.29_@swc+helpers@0.5.17__@swc+types@0.1_ab83749160d9edde04c4ee8d9916235f/node_modules/nx/src/daemon/server/shutdown-utils.js:69:12) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+}
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.741Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 1.
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.741Z - Closed a connection. Number of open connections: 6
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.771Z - Established a connection. Number of open connections: 7
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.771Z - Established a connection. Number of open connections: 8
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.771Z - Closed a connection. Number of open connections: 7
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.771Z - Established a connection. Number of open connections: 8
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.771Z - Closed a connection. Number of open connections: 7
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.772Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.772Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.773Z - Time taken for 'total for creating and serializing project graph' 0.20645799999965675ms
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.779Z - Done responding to the client project-graph
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.779Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 7.
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.783Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.783Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.783Z - Time taken for 'total for creating and serializing project graph' 0.1329160000000229ms
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.789Z - Done responding to the client project-graph
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.789Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 6.
+[NX v20.8.0 Daemon Server] - 2025-10-31T21:46:48.802Z - Established a connection. Number of open connections: 8
