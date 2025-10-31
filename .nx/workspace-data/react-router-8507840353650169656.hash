@@ -1,0 +1,427 @@
+{
+  "1296620565177120968apps/gui/react-router.config.ts": {
+    "targets": {
+      "build": {
+        "cache": true,
+        "dependsOn": [
+          "^build"
+        ],
+        "inputs": [
+          "default",
+          "^default",
+          {
+            "externalDependencies": [
+              "@react-router/dev"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/apps/gui/build/client",
+          "{workspaceRoot}/apps/gui/build/server"
+        ],
+        "command": "react-router build",
+        "options": {
+          "cwd": "apps/gui"
+        }
+      },
+      "dev": {
+        "command": "react-router dev",
+        "options": {
+          "cwd": "apps/gui"
+        }
+      },
+      "start": {
+        "dependsOn": [
+          "build"
+        ],
+        "command": "react-router-serve build/server/index.js",
+        "options": {
+          "cwd": "apps/gui"
+        }
+      },
+      "typecheck": {
+        "cache": true,
+        "inputs": [
+          "default",
+          "^default",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "command": "tsc -p tsconfig.app.json --noEmit",
+        "options": {
+          "cwd": "apps/gui"
+        },
+        "metadata": {
+          "description": "Runs type-checking for the project.",
+          "technologies": [
+            "typescript"
+          ],
+          "help": {
+            "command": "pnpm exec tsc -p tsconfig.app.json --help",
+            "example": {
+              "options": {
+                "noEmit": true
+              }
+            }
+          }
+        }
+      },
+      "build-deps": {
+        "dependsOn": [
+          "^build"
+        ]
+      },
+      "watch-deps": {
+        "dependsOn": [
+          "build-deps"
+        ],
+        "command": "pnpm exec nx watch --projects gui --includeDependentProjects -- pnpm exec nx build-deps gui"
+      }
+    },
+    "metadata": {},
+    "projectType": "application"
+  },
+  "18164054354850343625apps/gui/react-router.config.ts": {
+    "targets": {
+      "build": {
+        "cache": true,
+        "dependsOn": [
+          "^build"
+        ],
+        "inputs": [
+          "default",
+          "^default",
+          {
+            "externalDependencies": [
+              "@react-router/dev"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/apps/gui/build/client",
+          "{workspaceRoot}/apps/gui/build/server"
+        ],
+        "command": "react-router build",
+        "options": {
+          "cwd": "apps/gui"
+        }
+      },
+      "dev": {
+        "command": "react-router dev",
+        "options": {
+          "cwd": "apps/gui"
+        }
+      },
+      "start": {
+        "dependsOn": [
+          "build"
+        ],
+        "command": "react-router-serve build/server/index.js",
+        "options": {
+          "cwd": "apps/gui"
+        }
+      },
+      "typecheck": {
+        "cache": true,
+        "inputs": [
+          "default",
+          "^default",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "command": "tsc -p tsconfig.app.json --noEmit",
+        "options": {
+          "cwd": "apps/gui"
+        },
+        "metadata": {
+          "description": "Runs type-checking for the project.",
+          "technologies": [
+            "typescript"
+          ],
+          "help": {
+            "command": "pnpm exec tsc -p tsconfig.app.json --help",
+            "example": {
+              "options": {
+                "noEmit": true
+              }
+            }
+          }
+        }
+      },
+      "build-deps": {
+        "dependsOn": [
+          "^build"
+        ]
+      },
+      "watch-deps": {
+        "dependsOn": [
+          "build-deps"
+        ],
+        "command": "pnpm exec nx watch --projects gui --includeDependentProjects -- pnpm exec nx build-deps gui"
+      }
+    },
+    "metadata": {},
+    "projectType": "application"
+  },
+  "6013220325731068521apps/gui/react-router.config.ts": {
+    "targets": {
+      "build": {
+        "cache": true,
+        "dependsOn": [
+          "^build"
+        ],
+        "inputs": [
+          "default",
+          "^default",
+          {
+            "externalDependencies": [
+              "@react-router/dev"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/apps/gui/build/client",
+          "{workspaceRoot}/apps/gui/build/server"
+        ],
+        "command": "react-router build",
+        "options": {
+          "cwd": "apps/gui"
+        }
+      },
+      "dev": {
+        "command": "react-router dev",
+        "options": {
+          "cwd": "apps/gui"
+        }
+      },
+      "start": {
+        "dependsOn": [
+          "build"
+        ],
+        "command": "react-router-serve build/server/index.js",
+        "options": {
+          "cwd": "apps/gui"
+        }
+      },
+      "typecheck": {
+        "cache": true,
+        "inputs": [
+          "default",
+          "^default",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "command": "tsc -p tsconfig.app.json --noEmit",
+        "options": {
+          "cwd": "apps/gui"
+        },
+        "metadata": {
+          "description": "Runs type-checking for the project.",
+          "technologies": [
+            "typescript"
+          ],
+          "help": {
+            "command": "pnpm exec tsc -p tsconfig.app.json --help",
+            "example": {
+              "options": {
+                "noEmit": true
+              }
+            }
+          }
+        }
+      },
+      "build-deps": {
+        "dependsOn": [
+          "^build"
+        ]
+      },
+      "watch-deps": {
+        "dependsOn": [
+          "build-deps"
+        ],
+        "command": "pnpm exec nx watch --projects gui --includeDependentProjects -- pnpm exec nx build-deps gui"
+      }
+    },
+    "metadata": {},
+    "projectType": "application"
+  },
+  "6198799992234470836apps/gui/react-router.config.ts": {
+    "targets": {
+      "build": {
+        "cache": true,
+        "dependsOn": [
+          "^build"
+        ],
+        "inputs": [
+          "default",
+          "^default",
+          {
+            "externalDependencies": [
+              "@react-router/dev"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/apps/gui/build/client",
+          "{workspaceRoot}/apps/gui/build/server"
+        ],
+        "command": "react-router build",
+        "options": {
+          "cwd": "apps/gui"
+        }
+      },
+      "dev": {
+        "command": "react-router dev",
+        "options": {
+          "cwd": "apps/gui"
+        }
+      },
+      "start": {
+        "dependsOn": [
+          "build"
+        ],
+        "command": "react-router-serve build/server/index.js",
+        "options": {
+          "cwd": "apps/gui"
+        }
+      },
+      "typecheck": {
+        "cache": true,
+        "inputs": [
+          "default",
+          "^default",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "command": "tsc -p tsconfig.app.json --noEmit",
+        "options": {
+          "cwd": "apps/gui"
+        },
+        "metadata": {
+          "description": "Runs type-checking for the project.",
+          "technologies": [
+            "typescript"
+          ],
+          "help": {
+            "command": "pnpm exec tsc -p tsconfig.app.json --help",
+            "example": {
+              "options": {
+                "noEmit": true
+              }
+            }
+          }
+        }
+      },
+      "build-deps": {
+        "dependsOn": [
+          "^build"
+        ]
+      },
+      "watch-deps": {
+        "dependsOn": [
+          "build-deps"
+        ],
+        "command": "pnpm exec nx watch --projects gui --includeDependentProjects -- pnpm exec nx build-deps gui"
+      }
+    },
+    "metadata": {},
+    "projectType": "application"
+  },
+  "13533236769618814564apps/gui/react-router.config.ts": {
+    "targets": {
+      "build": {
+        "cache": true,
+        "dependsOn": [
+          "^build"
+        ],
+        "inputs": [
+          "default",
+          "^default",
+          {
+            "externalDependencies": [
+              "@react-router/dev"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/apps/gui/build/client",
+          "{workspaceRoot}/apps/gui/build/server"
+        ],
+        "command": "react-router build",
+        "options": {
+          "cwd": "apps/gui"
+        }
+      },
+      "dev": {
+        "command": "react-router dev",
+        "options": {
+          "cwd": "apps/gui"
+        }
+      },
+      "start": {
+        "dependsOn": [
+          "build"
+        ],
+        "command": "react-router-serve build/server/index.js",
+        "options": {
+          "cwd": "apps/gui"
+        }
+      },
+      "typecheck": {
+        "cache": true,
+        "inputs": [
+          "default",
+          "^default",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "command": "tsc -p tsconfig.app.json --noEmit",
+        "options": {
+          "cwd": "apps/gui"
+        },
+        "metadata": {
+          "description": "Runs type-checking for the project.",
+          "technologies": [
+            "typescript"
+          ],
+          "help": {
+            "command": "pnpm exec tsc -p tsconfig.app.json --help",
+            "example": {
+              "options": {
+                "noEmit": true
+              }
+            }
+          }
+        }
+      },
+      "build-deps": {
+        "dependsOn": [
+          "^build"
+        ]
+      },
+      "watch-deps": {
+        "dependsOn": [
+          "build-deps"
+        ],
+        "command": "pnpm exec nx watch --projects gui --includeDependentProjects -- pnpm exec nx build-deps gui"
+      }
+    },
+    "metadata": {},
+    "projectType": "application"
+  }
+}

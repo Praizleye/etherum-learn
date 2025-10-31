@@ -1,0 +1,991 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.8.0",
+  "pathMappings": {
+    "ethereum": [
+      "libs/ethereum/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/remix/plugin",
+      "options": {
+        "startTargetName": "start",
+        "buildTargetName": "build",
+        "devTargetName": "dev",
+        "typecheckTargetName": "typecheck",
+        "serveStaticTargetName": "serve-static",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps"
+      }
+    },
+    {
+      "name": "@nx/react/router-plugin",
+      "options": {
+        "buildTargetName": "build",
+        "devTargetName": "dev",
+        "startTargetName": "start",
+        "watchDepsTargetName": "watch-deps",
+        "buildDepsTargetName": "build-deps",
+        "typecheckTargetName": "typecheck"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "name": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "testTargetName": "test",
+        "serveTargetName": "serve",
+        "devTargetName": "dev",
+        "previewTargetName": "preview",
+        "serveStaticTargetName": "serve-static",
+        "typecheckTargetName": "typecheck",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps"
+      }
+    },
+    {
+      "name": "@nx/cypress/plugin",
+      "options": {
+        "targetName": "e2e",
+        "openTargetName": "open-cypress",
+        "componentTestingTargetName": "component-test",
+        "ciTargetName": "e2e-ci"
+      }
+    },
+    {
+      "name": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    },
+    {
+      "name": "@nx/webpack/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".gitignore",
+        "hash": "11900229695057693808"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "14957344469935029303"
+      },
+      {
+        "file": "README.md",
+        "hash": "8298329017847180333"
+      },
+      {
+        "file": "apps/smart-contracts/README.md",
+        "hash": "7748277169612224634"
+      },
+      {
+        "file": "apps/smart-contracts/contracts/Lock.sol",
+        "hash": "18445129145553021868"
+      },
+      {
+        "file": "apps/smart-contracts/contracts/Tokens.sol",
+        "hash": "11649821836308982118"
+      },
+      {
+        "file": "apps/smart-contracts/hardhat.config.ts",
+        "hash": "16974454826277775449"
+      },
+      {
+        "file": "apps/smart-contracts/ignition/modules/Lock.ts",
+        "hash": "7606213855772406337"
+      },
+      {
+        "file": "apps/smart-contracts/test/Lock.ts",
+        "hash": "11798236671297768570"
+      },
+      {
+        "file": "apps/smart-contracts/tsconfig.json",
+        "hash": "4683222762130620071"
+      },
+      {
+        "file": "docker-compose.yaml",
+        "hash": "11104269811360949826"
+      },
+      {
+        "file": "eslint.config.mjs",
+        "hash": "4441752962774184875"
+      },
+      {
+        "file": "geth-data/sepolia/geth/LOCK",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/limbo/bkt_00004096.bag",
+        "hash": "11346390306613473665"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/limbo/bkt_00135168.bag",
+        "hash": "5177491042349877143"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/limbo/bkt_00266240.bag",
+        "hash": "5011148801853678314"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/limbo/bkt_00397312.bag",
+        "hash": "17299126631293311172"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/limbo/bkt_00528384.bag",
+        "hash": "9552430405821582342"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/limbo/bkt_00659456.bag",
+        "hash": "17232527466778783529"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/limbo/bkt_00790528.bag",
+        "hash": "10563102001947492344"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/limbo/bkt_00921600.bag",
+        "hash": "6598263397979588968"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/limbo/bkt_01052672.bag",
+        "hash": "9024845638352153939"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/limbo/bkt_01183744.bag",
+        "hash": "9051819690787512087"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/limbo/bkt_01314816.bag",
+        "hash": "545222787409326815"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/limbo/bkt_01445888.bag",
+        "hash": "9995646178654953068"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/limbo/bkt_01576960.bag",
+        "hash": "5313820516538063122"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/limbo/bkt_01708032.bag",
+        "hash": "953227530382954439"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/limbo/bkt_01839104.bag",
+        "hash": "1367331907209347999"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/limbo/bkt_01970176.bag",
+        "hash": "10410243779931261444"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/limbo/bkt_02101248.bag",
+        "hash": "10116296621455426549"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/limbo/bkt_02232320.bag",
+        "hash": "13346204985896638636"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/queue/bkt_00004096.bag",
+        "hash": "11346390306613473665"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/queue/bkt_00135168.bag",
+        "hash": "5177491042349877143"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/queue/bkt_00266240.bag",
+        "hash": "5011148801853678314"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/queue/bkt_00397312.bag",
+        "hash": "17299126631293311172"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/queue/bkt_00528384.bag",
+        "hash": "9552430405821582342"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/queue/bkt_00659456.bag",
+        "hash": "17232527466778783529"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/queue/bkt_00790528.bag",
+        "hash": "10563102001947492344"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/queue/bkt_00921600.bag",
+        "hash": "6598263397979588968"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/queue/bkt_01052672.bag",
+        "hash": "9024845638352153939"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/queue/bkt_01183744.bag",
+        "hash": "9051819690787512087"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/queue/bkt_01314816.bag",
+        "hash": "545222787409326815"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/queue/bkt_01445888.bag",
+        "hash": "9995646178654953068"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/queue/bkt_01576960.bag",
+        "hash": "5313820516538063122"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/queue/bkt_01708032.bag",
+        "hash": "953227530382954439"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/queue/bkt_01839104.bag",
+        "hash": "1367331907209347999"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/queue/bkt_01970176.bag",
+        "hash": "10410243779931261444"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/queue/bkt_02101248.bag",
+        "hash": "10116296621455426549"
+      },
+      {
+        "file": "geth-data/sepolia/geth/blobpool/queue/bkt_02232320.bag",
+        "hash": "13346204985896638636"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/000014.log",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/000017.sst",
+        "hash": "12895284796454433216"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/CURRENT",
+        "hash": "801199888516565082"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/LOCK",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/MANIFEST-000010",
+        "hash": "8649594896419568056"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/MANIFEST-000015",
+        "hash": "6837633752981335231"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/OPTIONS-000016",
+        "hash": "4604104372880179595"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/chain/FLOCK",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/chain/bodies.0000.cdat",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/chain/bodies.cidx",
+        "hash": "495241482871176679"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/chain/bodies.meta",
+        "hash": "15679807105365370536"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/chain/hashes.0000.rdat",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/chain/hashes.meta",
+        "hash": "15679807105365370536"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/chain/hashes.ridx",
+        "hash": "495241482871176679"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/chain/headers.0000.cdat",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/chain/headers.cidx",
+        "hash": "495241482871176679"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/chain/headers.meta",
+        "hash": "15679807105365370536"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/chain/receipts.0000.cdat",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/chain/receipts.cidx",
+        "hash": "495241482871176679"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/chain/receipts.meta",
+        "hash": "15679807105365370536"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/state/FLOCK",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/state/account.data.0000.cdat",
+        "hash": "14144645293874801883"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/state/account.data.cidx",
+        "hash": "16715289548166875416"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/state/account.data.meta",
+        "hash": "620236985075981843"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/state/account.index.0000.cdat",
+        "hash": "3414803636311069889"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/state/account.index.cidx",
+        "hash": "10508655845990483178"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/state/account.index.meta",
+        "hash": "620236985075981843"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/state/history.meta.0000.rdat",
+        "hash": "7174276389306779418"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/state/history.meta.meta",
+        "hash": "620236985075981843"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/state/history.meta.ridx",
+        "hash": "3771779773450232115"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/state/storage.data.0000.cdat",
+        "hash": "14144645293874801883"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/state/storage.data.cidx",
+        "hash": "16715289548166875416"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/state/storage.data.meta",
+        "hash": "620236985075981843"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/state/storage.index.0000.cdat",
+        "hash": "14144645293874801883"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/state/storage.index.cidx",
+        "hash": "16715289548166875416"
+      },
+      {
+        "file": "geth-data/sepolia/geth/chaindata/ancient/state/storage.index.meta",
+        "hash": "620236985075981843"
+      },
+      {
+        "file": "geth-data/sepolia/geth/nodekey",
+        "hash": "2044821221049608865"
+      },
+      {
+        "file": "geth-data/sepolia/geth/nodes/000008.ldb",
+        "hash": "14203083473764313396"
+      },
+      {
+        "file": "geth-data/sepolia/geth/nodes/000009.log",
+        "hash": "17821957694887897328"
+      },
+      {
+        "file": "geth-data/sepolia/geth/nodes/000011.ldb",
+        "hash": "9885873241905829002"
+      },
+      {
+        "file": "geth-data/sepolia/geth/nodes/CURRENT",
+        "hash": "4866847783121986761"
+      },
+      {
+        "file": "geth-data/sepolia/geth/nodes/CURRENT.bak",
+        "hash": "8904602837060802627"
+      },
+      {
+        "file": "geth-data/sepolia/geth/nodes/LOCK",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "geth-data/sepolia/geth/nodes/LOG",
+        "hash": "15785754014874970407"
+      },
+      {
+        "file": "geth-data/sepolia/geth/nodes/MANIFEST-000010",
+        "hash": "11847641823962639715"
+      },
+      {
+        "file": "geth-data/sepolia/geth/transactions.rlp",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "6870352021923392442"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "jwt.hex",
+        "hash": "11320929976378309738"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/blobs_db/000009.log",
+        "hash": "15492637161937056097"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/blobs_db/CURRENT",
+        "hash": "14260505530472141001"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/blobs_db/LOCK",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/blobs_db/LOG",
+        "hash": "5228461897163059524"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/blobs_db/LOG.old",
+        "hash": "17921551405928876078"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/blobs_db/MANIFEST-000008",
+        "hash": "2054369842101769875"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/chain_db/000005.ldb",
+        "hash": "6358235301339257702"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/chain_db/000008.ldb",
+        "hash": "13083469453984219100"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/chain_db/000011.ldb",
+        "hash": "3401864417703794310"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/chain_db/000012.log",
+        "hash": "1500011704358334552"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/chain_db/CURRENT",
+        "hash": "4866847783121986761"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/chain_db/LOCK",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/chain_db/LOG",
+        "hash": "488821870595145153"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/chain_db/LOG.old",
+        "hash": "16497394997277206416"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/chain_db/MANIFEST-000010",
+        "hash": "2112825364936965818"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/freezer_db/000009.log",
+        "hash": "17903209631859109355"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/freezer_db/CURRENT",
+        "hash": "14260505530472141001"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/freezer_db/LOCK",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/freezer_db/LOG",
+        "hash": "6692367434922717408"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/freezer_db/LOG.old",
+        "hash": "8990299281571483989"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/freezer_db/MANIFEST-000008",
+        "hash": "2054369842101769875"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/logs/beacon.log",
+        "hash": "9121996347600281173"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/logs/discv5.log",
+        "hash": "7659687953293483622"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/logs/libp2p.log",
+        "hash": "6428693835236390346"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/network/enr.dat",
+        "hash": "3753625629141290730"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/network/key",
+        "hash": "15410496899591729051"
+      },
+      {
+        "file": "lighthouse-data/sepolia/beacon/network/metadata",
+        "hash": "4043954654874049242"
+      },
+      {
+        "file": "nx.json",
+        "hash": "12545025635324340001"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "11721719802931025562"
+      },
+      {
+        "file": "package.json",
+        "hash": "13490957668177421753"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "10448380297095880694"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "12377652048712547707"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "8487889796778140134"
+      },
+      {
+        "file": "vitest.workspace.ts",
+        "hash": "4665328684042819579"
+      }
+    ],
+    "projectFileMap": {
+      "api": [
+        {
+          "file": "apps/api/eslint.config.mjs",
+          "hash": "2624537849564014525"
+        },
+        {
+          "file": "apps/api/jest.config.ts",
+          "hash": "11236996806909307999"
+        },
+        {
+          "file": "apps/api/project.json",
+          "hash": "7148323572386722487"
+        },
+        {
+          "file": "apps/api/src/app/app.controller.spec.ts",
+          "hash": "7647647754668916054",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/app.controller.ts",
+          "hash": "15276891910009544695",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/app.module.ts",
+          "hash": "11673476679848632172",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/app.service.spec.ts",
+          "hash": "13111976464657524091",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "apps/api/src/app/app.service.ts",
+          "hash": "9967902337593410053",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/api/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/api/src/main.ts",
+          "hash": "150780270862474464",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "apps/api/tsconfig.app.json",
+          "hash": "11728618664080294556"
+        },
+        {
+          "file": "apps/api/tsconfig.json",
+          "hash": "3490524966360018312"
+        },
+        {
+          "file": "apps/api/tsconfig.spec.json",
+          "hash": "6622138706846345436"
+        },
+        {
+          "file": "apps/api/webpack.config.js",
+          "hash": "3774360504015463941",
+          "deps": [
+            "npm:@nx/webpack"
+          ]
+        }
+      ],
+      "ethereum": [
+        {
+          "file": "libs/ethereum/README.md",
+          "hash": "12522100308540354572"
+        },
+        {
+          "file": "libs/ethereum/eslint.config.mjs",
+          "hash": "8070428678732267467",
+          "deps": [
+            [
+              "npm:jsonc-eslint-parser",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "libs/ethereum/jest.config.ts",
+          "hash": "13378782576731389794"
+        },
+        {
+          "file": "libs/ethereum/package.json",
+          "hash": "4406794067022591360"
+        },
+        {
+          "file": "libs/ethereum/project.json",
+          "hash": "14307407055504520387"
+        },
+        {
+          "file": "libs/ethereum/src/index.ts",
+          "hash": "4646017540556389097"
+        },
+        {
+          "file": "libs/ethereum/src/lib/ethereum.spec.ts",
+          "hash": "16114159188777993902"
+        },
+        {
+          "file": "libs/ethereum/src/lib/ethereum.ts",
+          "hash": "13854564961811002382"
+        },
+        {
+          "file": "libs/ethereum/tsconfig.json",
+          "hash": "12975668481162286788"
+        },
+        {
+          "file": "libs/ethereum/tsconfig.lib.json",
+          "hash": "874530265290128605"
+        },
+        {
+          "file": "libs/ethereum/tsconfig.spec.json",
+          "hash": "6622138706846345436"
+        },
+        {
+          "file": "libs/ethereum/vite.config.ts",
+          "hash": "5347162672599410485",
+          "deps": [
+            "npm:vite",
+            "npm:vite-plugin-dts",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "api-e2e": [
+        {
+          "file": "apps/api-e2e/eslint.config.mjs",
+          "hash": "2624537849564014525"
+        },
+        {
+          "file": "apps/api-e2e/jest.config.ts",
+          "hash": "16237957319090451515"
+        },
+        {
+          "file": "apps/api-e2e/project.json",
+          "hash": "18010798395537753667"
+        },
+        {
+          "file": "apps/api-e2e/src/api/api.spec.ts",
+          "hash": "110394728024017389",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/api-e2e/src/support/global-setup.ts",
+          "hash": "2568409276037275290"
+        },
+        {
+          "file": "apps/api-e2e/src/support/global-teardown.ts",
+          "hash": "5275447082211835490"
+        },
+        {
+          "file": "apps/api-e2e/src/support/test-setup.ts",
+          "hash": "15521797170623961900",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "apps/api-e2e/tsconfig.json",
+          "hash": "15443990093475294480"
+        },
+        {
+          "file": "apps/api-e2e/tsconfig.spec.json",
+          "hash": "14954872453723519891"
+        }
+      ],
+      "gui-e2e": [
+        {
+          "file": "apps/gui-e2e/cypress.config.ts",
+          "hash": "6294820999006305645",
+          "deps": [
+            "npm:@nx/cypress",
+            "npm:cypress"
+          ]
+        },
+        {
+          "file": "apps/gui-e2e/eslint.config.mjs",
+          "hash": "7267301145493616340",
+          "deps": [
+            "npm:eslint-plugin-cypress"
+          ]
+        },
+        {
+          "file": "apps/gui-e2e/project.json",
+          "hash": "16245726678071315898"
+        },
+        {
+          "file": "apps/gui-e2e/src/e2e/app.cy.ts",
+          "hash": "7422174609562652130"
+        },
+        {
+          "file": "apps/gui-e2e/src/fixtures/example.json",
+          "hash": "11785586596216172004"
+        },
+        {
+          "file": "apps/gui-e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "apps/gui-e2e/src/support/commands.ts",
+          "hash": "6408592624158157338"
+        },
+        {
+          "file": "apps/gui-e2e/src/support/e2e.ts",
+          "hash": "1054106023200826784"
+        },
+        {
+          "file": "apps/gui-e2e/tsconfig.json",
+          "hash": "10740392072068377465"
+        }
+      ],
+      "gui": [
+        {
+          "file": "apps/gui/.gitignore",
+          "hash": "1322857172772037533"
+        },
+        {
+          "file": "apps/gui/app/app-nav.tsx",
+          "hash": "10177948640141916258",
+          "deps": [
+            "npm:react-router"
+          ]
+        },
+        {
+          "file": "apps/gui/app/app.tsx",
+          "hash": "1301195582731698315"
+        },
+        {
+          "file": "apps/gui/app/entry.client.tsx",
+          "hash": "14020779709371897962",
+          "deps": [
+            "npm:react-router",
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/gui/app/entry.server.tsx",
+          "hash": "702601401085993791",
+          "deps": [
+            "npm:react-router",
+            "npm:@react-router/node",
+            "npm:isbot",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/gui/app/nx-welcome.tsx",
+          "hash": "10379893110912579493"
+        },
+        {
+          "file": "apps/gui/app/root.tsx",
+          "hash": "13240290643875586017",
+          "deps": [
+            "npm:react-router"
+          ]
+        },
+        {
+          "file": "apps/gui/app/routes.tsx",
+          "hash": "15982387245062999001",
+          "deps": [
+            "npm:@react-router/dev"
+          ]
+        },
+        {
+          "file": "apps/gui/app/routes/about.tsx",
+          "hash": "124354424245877004"
+        },
+        {
+          "file": "apps/gui/eslint.config.mjs",
+          "hash": "8789163670399984295",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "apps/gui/package.json",
+          "hash": "2320463230269522868",
+          "deps": [
+            "npm:@react-router/dev",
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@react-router/node",
+            "npm:@react-router/serve",
+            "npm:isbot",
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-router"
+          ]
+        },
+        {
+          "file": "apps/gui/postcss.config.js",
+          "hash": "2759402739052110475"
+        },
+        {
+          "file": "apps/gui/project.json",
+          "hash": "8827193958095852052"
+        },
+        {
+          "file": "apps/gui/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/gui/react-router.config.ts",
+          "hash": "13167588060401889453",
+          "deps": [
+            "npm:@react-router/dev"
+          ]
+        },
+        {
+          "file": "apps/gui/styles.css",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "apps/gui/tailwind.config.js",
+          "hash": "13090734457927965885",
+          "deps": [
+            "npm:@nx/react"
+          ]
+        },
+        {
+          "file": "apps/gui/tests/routes/_index.spec.tsx",
+          "hash": "16299363482387324565",
+          "deps": [
+            "npm:react-router",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/gui/tsconfig.app.json",
+          "hash": "5737920085896277176"
+        },
+        {
+          "file": "apps/gui/tsconfig.json",
+          "hash": "15083605331560495176"
+        },
+        {
+          "file": "apps/gui/tsconfig.spec.json",
+          "hash": "2374680567064402239"
+        },
+        {
+          "file": "apps/gui/vite.config.ts",
+          "hash": "2640718504429192123",
+          "deps": [
+            "npm:vite",
+            "npm:@react-router/dev",
+            "npm:@nx/vite"
+          ]
+        }
+      ]
+    }
+  }
+}

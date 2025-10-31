@@ -1,0 +1,10 @@
+{
+  "name": "gui-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/gui-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["gui"],
+  "// targets": "to see all targets run: nx show project gui-e2e --web",
+  "targets": {}
+}
