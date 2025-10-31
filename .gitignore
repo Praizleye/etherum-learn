@@ -2,3 +2,48 @@ node_modules
 
 vite.config.*.timestamp*
 vitest.config.*.timestamp*
+
+# Common directories
+node_modules/
+**/node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# OS and editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Build/output
+dist/
+build/
+out/
+coverage/
+.nyc_output/
+.cache/
+.parcel-cache/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Vite / dev caches
+.vite/
+
+# Solidity / Hardhat artifacts and cache
+artifacts/
+cache/
+typechain/
+
+# Local blockchain and node data (large binaries/state)
+geth-data/
+lighthouse-data/
+
+# Packages and archives
+*.tgz
